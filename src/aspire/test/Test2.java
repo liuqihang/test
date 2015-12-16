@@ -11,4 +11,12 @@ public class Test2 {
 	public void test(){
 		System.out.println(111);
 	}
+	
+	public boolean selectAll(int num){
+		while(true){
+			if(num == 5){
+				break;
+			}
+		}
+	}
 }
