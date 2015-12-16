@@ -3,11 +3,11 @@ package aspire.test;
 public class Test2 {
 
 	public void println(){
-		String sql = "select * from lxc_user";
+		String sql = "select * from lxc_school";
 		System.out.println(sql);
 	}
 
-	public boolean selectAll(int num){
+	public static boolean selectAll(int num){
 		while(true){
 			if(num == 5){
 				return true;
@@ -16,11 +16,10 @@ public class Test2 {
 		}
 		return false;
 	}
-	
+
 	public static void main(String[] args) {
-		for (int num = 0; num < 5; num++) {
-			System.out.println(num);
-		}
+		boolean flag = selectAll(5);
+		System.out.println(flag);
 	}
 
 
