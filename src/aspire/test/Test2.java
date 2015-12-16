@@ -2,20 +2,14 @@ package aspire.test;
 
 public class Test2 {
 
-	private static final String USER_NAME="liuqihang";
-
-	public static void main(String[] args) {
-		for (int num = 0; num < 5; num++) {
-			System.out.println(num);
-		}
-	}
+	private static final String USER_NAME="liuqihang1";
 
 	public void println(){
-		String sql = "select * from lxc_user";
+		String sql = "select * from lxc_school";
 		System.out.println(sql);
 	}
 
-	public boolean selectAll(int num){
+	public static boolean selectAll(int num){
 		while(true){
 			if(num == 5){
 				return true;
@@ -23,6 +17,11 @@ public class Test2 {
 			break;
 		}
 		return false;
+	}
+
+	public static void main(String[] args) {
+		boolean flag = selectAll(5);
+		System.out.println(flag);
 	}
 
 
